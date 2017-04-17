@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<label name="图库1" src="topimage/toppic01.jpg">
+		<pic text="图片描述1" src="images/pic1.jpg" />
+		<pic text="图片描述2" src="images/pic2.jpg" />
+		<pic text="图片描述3" src="images/pic3.jpg" />
+		<pic text="图片描述4" src="images/pic4.jpg" />
+		<pic text="图片描述5" src="images/pic5.jpg" />
+        <pic text="图片描述6" src="images/pic6.jpg" />
+		<pic text="图片描述7" src="images/pic7.jpg" />
+		<pic text="图片描述8" src="images/pic8.jpg" />
+		<pic text="图片描述9" src="images/pic9.jpg" />
+		<pic text="图片描述0" src="images/pic0.jpg" />
+	</label>
+	<label name="图库2" src="topimage/toppic02.jpg">
+		<pic text="新图片1" src="images/pic1.jpg" />
+		<pic text="新图片2" src="images/pic2.jpg" />
+		<pic text="新图片3" src="images/pic3.jpg" />
+		<pic text="新图片4" src="images/pic4.jpg" />
+	</label>
+    <label name="图库3" src="topimage/toppic03.jpg">
+		<pic text="新图片1" src="images/pic1.jpg" />
+		<pic text="新图片2" src="images/pic2.jpg" />
+		<pic text="新图片3" src="images/pic3.jpg" />
+		<pic text="新图片4" src="images/pic4.jpg" />
+	</label>
+    <label name="图库4" src="topimage/toppic04.jpg">
+		<pic text="新图片1" src="images/pic1.jpg" />
+		<pic text="新图片2" src="images/pic2.jpg" />
+		<pic text="新图片3" src="images/pic3.jpg" />
+		<pic text="新图片4" src="images/pic4.jpg" />
+	</label>
+    <label name="图库5" src="topimage/toppic05.jpg">
+		<pic text="新图片1" src="images/pic1.jpg" />
+		<pic text="新图片2" src="images/pic2.jpg" />
+		<pic text="新图片3" src="images/pic3.jpg" />
+		<pic text="新图片4" src="images/pic4.jpg" />
+	</label>
+    <label name="图库6" src="topimage/toppic06.jpg">
+		<pic text="新图片1" src="images/pic1.jpg" />
+		<pic text="新图片2" src="images/pic2.jpg" />
+		<pic text="新图片3" src="images/pic3.jpg" />
+		<pic text="新图片4" src="images/pic4.jpg" />
+	</label>
+    <label name="图库7" src="topimage/toppic07.jpg">
+		<pic text="新图片1" src="images/pic1.jpg" />
+		<pic text="新图片2" src="images/pic2.jpg" />
+		<pic text="新图片3" src="images/pic3.jpg" />
+		<pic text="新图片4" src="images/pic4.jpg" />
+	</label>
+    <label name="图库8" src="topimage/toppic08.jpg">
+		<pic text="新图片1" src="images/pic1.jpg" />
+		<pic text="新图片2" src="images/pic2.jpg" />
+		<pic text="新图片3" src="images/pic3.jpg" />
+		<pic text="新图片4" src="images/pic4.jpg" />
+	</label>
+    <label name="图库9" src="topimage/toppic09.jpg">
+		<pic text="新图片1" src="images/pic1.jpg" />
+		<pic text="新图片2" src="images/pic2.jpg" />
+		<pic text="新图片3" src="images/pic3.jpg" />
+		<pic text="新图片4" src="images/pic4.jpg" />
+	</label>
+    <label name="图库0" src="topimage/toppic00.jpg">
+		<pic text="新图片1" src="images/pic1.jpg" />
+		<pic text="新图片2" src="images/pic2.jpg" />
+		<pic text="新图片3" src="images/pic3.jpg" />
+		<pic text="新图片4" src="images/pic4.jpg" />
+	</label>
+</root>

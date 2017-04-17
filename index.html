@@ -1,87 +1,143 @@
 <!doctype html>
-
 <html>
 
 <head>
+  <meta charset="utf-8">
+  <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+  <title>slider</title>
+  <link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css">
+  <style>
+    p {
+      width: 100%;
+      height: 40px;
+      font-size: 20px;
+      color: #333;
+      line-height: 40px;
+      text-align: center;
+      font-family: "微软雅黑"
+    }
 
-<meta charset="utf-8">
+    .left {
+      width: 200px;
+      float: left;
+      height: auto;
+    }
 
-<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    .right {
+      overflow: hidden;
+      float: left;
+      width: calc(100% - 220px);
+      height: 888px;
+      border: 3px solid gray;
+    }
 
-<script type="text/javascript" src="js/jquery.bxslider.js"></script>
-
-
-
-
-
-<title>slider</title>
-
-<link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css">
-
-<style>
-
-  p{ width:100%; height:40px; font-size:20px; color:#333; line-height:40px; text-align:center; font-family:"微软雅黑"}
-
-</style>
-
+    ul.imglist{ margin:0 auto; width:100%;overflow:visible;} 
+    ul.imglist li{ float:left; padding:14px 8px;margin-left:20px;margin-right:40px;width:330px;height:400px;text-align:center;list-style:none;}
+    ul.imglist li a{text-decoration:none;color:seagreen}
+    ul.imglist li img{ display:block; width:100%; height:100%} 
+    ul.imglist li span{ display:block; width:100%; height:30px; line-height:30px; background:#F6F6F6;padding-bottom: 10px;} 
+  </style>
 </head>
 
-
-
 <body>
-  <!-- ---------------------------------slider5--------------------------------------------- -->
-    <br/>
+  <br/>
+  <div class="left">
     <div class="slider5">
-
-      <div class="slide"><img src="images/fo1-text.png"></div>
-
-      <div class="slide"><img src="images/fo2-text.png"></div>
-
-      <div class="slide"><img src="images/fo3-text.png"></div>
-
-      <div class="slide"><img src="images/fo4-text.png"></div>
-
-      <div class="slide"><img src="images/fo5-text.png"></div>
-
-      <div class="slide"><img src="images/fo6-text.png"></div>
-
-      <div class="slide"><img src="images/fo7-text.png"></div>
-
-      <div class="slide"><img src="images/fo8-text.png"></div>
-
-      <div class="slide"><img src="images/fo9-text.png"></div> 
-
-      <div class="slide"><img src="images/fo0-text.png"></div> 
-
+      <div class="slide"><img src="pic/topimg/toppic01.jpg"></div>
+      <div class="slide"><img src="pic/topimg/toppic02.jpg"></div>
+      <div class="slide"><img src="pic/topimg/toppic03.jpg"></div>
+      <div class="slide"><img src="pic/topimg/toppic04.jpg"></div>
+      <div class="slide"><img src="pic/topimg/toppic05.jpg"></div>
+      <div class="slide"><img src="pic/topimg/toppic06.jpg"></div>
+      <div class="slide"><img src="pic/topimg/toppic07.jpg"></div>
+      <div class="slide"><img src="pic/topimg/toppic08.jpg"></div>
+      <!--<div class="slide"><img src="pic/topimg/toppic09.jpg"></div>
+        <div class="slide"><img src="pic/topimg/toppic00.jpg"></div>-->
     </div>
+  </div>
+  <div class="right">
+    <ul class="imglist"> 
+      <li>
+          <a href="javascript:void(0)" >
+            <img src="pic/image/pic01.jpg" />
+            <span>一二三四五六七八九十一二三四五六七八九十</span>
+          </a>
+      </li>
+      <li>
+          <a href="javascript:void(0)" >
+            <img src="pic/image/pic02.jpg" />
+            <span>其他信息</span>
+          </a>
+      </li>
+      <li>
+          <a href="javascript:void(0)" >
+            <img src="pic/image/pic03.jpg" />
+            <span>宣誓签名</span>
+          </a>
+      </li>
+      <li>
+          <a href="javascript:void(0)" >
+            <img src="pic/image/pic01.jpg" />
+            <span>申请人信息</span>
+          </a>
+      </li>
+      <li>
+          <a href="javascript:void(0)" >
+            <img src="pic/image/pic02.jpg" />
+            <span>其他信息</span>
+          </a>
+      </li>
+      <li>
+          <a href="javascript:void(0)" >
+            <img src="pic/image/pic03.jpg" />
+            <span>宣誓签名</span>
+          </a>
+      </li>
+      <li>
+          <a href="javascript:void(0)" >
+            <img src="pic/image/pic01.jpg" />
+            <span>申请人信息</span>
+          </a>
+      </li>
+      <li>
+          <a href="javascript:void(0)" >
+            <img src="pic/image/pic02.jpg" />
+            <span>其他信息</span>
+          </a>
+      </li>
+    </ul>
+    <div id="imgShow" style="width:100%;height:100%;overflow-y:scroll;display:none;margin:0 auto;text-align:center;">
+      <img src="" width=60%/>
+    </div>
+  </div>
 
-    <script type="text/javascript">
+  <script type="text/javascript">
+    $(document).ready(function () {
 
-        $(document).ready(function(){
-
-          $('.slider5').bxSlider({
-
-            mode: 'vertical',
-            pager: false,
-
-            slideWidth: 80,
-
-            minSlides: 5,
-
-            slideMargin: 10
-
-          });
-
-        });
-
-    </script>
-
-    
+      $('.slider5').bxSlider({
+        mode: 'vertical',
+        pager: false,
+        slideWidth: 161,
+        minSlides: 4,
+        slideMargin: 10
+      });
 
 
+      $(".imglist").on("click", "a", function(){
+        //alert($(this).find("span").text())
+      });
+
+
+      $(".imglist").on("click", "li", function(){
+        $(this).parent().hide();
+        $("#imgShow").find("img").attr("src", $(this).find("img").attr("src"));
+        $("#imgShow").show();
+      });
+
+
+    });
+  </script>
 </body>
 
-
-
 </html>
-

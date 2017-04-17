@@ -16,9 +16,12 @@
 
 .bx-wrapper {
 	position: relative;
-	margin: 0 auto 60px;
+	/*margin: 0 auto 60px;*/
 	padding: 0;
 	*zoom: 1;
+
+	margin: 0 30px;
+	margin-left: 30px;
 }
 
 .bx-wrapper img {
