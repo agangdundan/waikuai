@@ -1,0 +1,180 @@
+
+<!DOCTYPE HTML>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="zh"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="zh"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="zh"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh">  <!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>jQuery响应式按比例生成图片缩略图插件效果演示_jQuery之家-自由分享jQuery、html5、css3的插件库</title>
+	<meta name="keywords" content="jqthumb,缩略图,生成缩略图,jquery,响应式,按比例生成缩略图" />
+	<meta name="description" content="jQuery响应式按比例生成图片缩略图插件效果演示。" />
+	<link rel="shortcut icon" href="http://www.htmleaf.com/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/htmleaf-demo.min.css" />
+	<!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        #demo {
+	width: 100px;
+	height: 100px;
+	background-color: #ccc;
+	position: relative;
+	border: 4px solid #333;
+}
+
+#demo:after, #demo:before {
+	border: solid transparent;
+	content: ' ';
+	height: 0;
+	left: 100%;
+	position: absolute;
+	width: 0;
+}
+
+#demo:after {
+	border-width: 9px;
+	border-left-color: #ccc;
+	top: 15px;
+}
+
+#demo:before {
+	border-width: 14px;
+	border-left-color: #333;
+	top: 10px;
+}
+
+
+.demo{
+                background-color: gray;
+                height: 120px;
+                position: relative;
+                width: 200px;
+                
+            border:2.75px solid red;
+            }
+        .demo:after,.demo:before{
+            content:'';
+            position:absolute;
+        }
+        .demo:after{
+            /*height:20px;
+            width:20px;
+            background:yellow;
+ 
+            border:10px  solid lightgreen;*/
+            border:10px  solid transparent;
+            border-top-color:gray;
+            top:100px;
+            left:10px;
+        }        
+            .demo:before{
+            /*height:30px;
+            width:30px;
+            background:green;
+ 
+            border:15px solid red;*/
+            border:15px solid transparent;
+            border-top-color:red;
+            top:100px;
+            left:10px;
+        }
+
+
+
+.arrow-outer {
+position:absolute;
+height:24px;
+width:60px;
+overflow:hidden;
+}
+.arrow-shadow {
+-webkit-box-shadow:0 0 10px 0 #AAAAAA;
+-webkit-transform:rotate(45deg);
+background:none repeat scroll 0 0 #FFFFFF;
+height:40px;
+left:15px;
+position:absolute;
+top:16px;
+width:40px;
+}
+.arrow-inner {
+position:relative;
+left:10px;
+top:20px;
+height:40px;
+width:40px;
+background:#fff;
+border:5px solid #ededed;
+-webkit-transform:rotate(45deg);
+transform:rotate(45deg);
+}
+    </style>
+</head>
+<body>
+	<div class="htmleaf-container">
+		<div class="htmleaf-container--header" style="height:25px;">
+			
+		</div>
+		<div class="htmleaf--main">
+			<div class="htmleaf-container--side">
+				
+				<!--相关插件-->
+				<div class="htmleaf-related">
+                    
+                    <div class="arrow-outer">
+                        <div class="arrow-inner"></div>
+                        
+                    </div>
+                    
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <div id="demo2" class="demo"></div>
+
+					<h2>相关插件</h2>
+				    <a href="javascript:void(0);">
+                        <img src="pic/201412041558.jpg" width="300" alt="jQuery和css3圆形缩略图导航轮播图插件"/>
+                        <h3>jQuery和css3圆形缩略图导航轮播图插件</h3>
+                    </a>
+                    <a href="javascript:void(0);">
+                        <img src="pic/201412101318.jpg" width="300" alt="jQuery和css3移动滑块比较图像插件"/>
+                        <h3>jQuery和css3移动滑块比较图像插件</h3>
+                    </a>
+				</div>
+			</div>
+			<div class="htmleaf-container--content">
+				<!--<iframe src="http://demo.htmleaf.com/1501/201501211648/index.html" id="iframe" ></iframe>-->
+			</div>
+		</div>
+	</div>
+	<script src="js/htmleaf-demo.min.js"></script>
+	<script type="text/javascript">
+		IS_IPAD=navigator.userAgent.match(/iPad/i)!=null;
+		var t={desktop:"100%",tabletlandscape:1040,tabletportrait:788,mobilelandscape:480,mobileportrait:340,placebo:0};
+		jQuery(".responsive a").on("click",function(){
+		var e=jQuery(this);
+		for(device in t){
+			if(e.hasClass(device)){
+				clicked=device;
+				jQuery("#iframe").width(t[device]);
+				if(clicked==device){
+					jQuery(".responsive a").removeClass("active");
+					e.addClass("active")}}}
+		return false});
+		if(IS_IPAD){
+			$("#iframe").css("padding-bottom","60px")
+		}
+	</script>
+	<script type="text/javascript">
+		$(".htmleaf-container--side").mCustomScrollbar({
+			theme:"minimal"
+		});
+	</script>
+</body>
+</html>
